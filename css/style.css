@@ -189,12 +189,10 @@ a {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.3) 0%,
-    rgba(0, 0, 0, 0.55) 50%,
-    rgba(0, 0, 0, 0.75) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.55) 50%,
+      rgba(0, 0, 0, 0.75) 100%);
 }
 
 .hero-content {
@@ -954,12 +952,10 @@ section {
 .tour-detail-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.3) 100%);
   z-index: 1;
 }
 
@@ -1585,22 +1581,28 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
+
   .tour-overview-grid {
     grid-template-columns: 1fr;
   }
+
   .destination-item {
     grid-template-columns: 1fr;
   }
+
   .destination-item.reverse {
     direction: ltr;
   }
+
   .price-grid {
     grid-template-columns: 1fr;
   }
+
   .booking-wrapper {
     grid-template-columns: 1fr;
     padding: 24px;
   }
+
   .tour-slide {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -1611,29 +1613,36 @@ section {
   .header {
     padding: 12px 0;
   }
+
   .menu-toggle {
     display: block;
   }
+
   .btn-wa-header {
     display: none;
   }
+
   .hero-content {
     padding: 80px 20px 40px;
     text-align: center;
   }
+
   .hero-content h1 {
     font-size: 30px;
   }
+
   .hero-content p {
     font-size: 15px;
     padding: 0 10px;
   }
+
   .hero-buttons {
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 280px;
   }
+
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary {
     width: 100%;
@@ -1641,85 +1650,108 @@ section {
     justify-content: center;
     padding: 12px 24px;
   }
+
   .hero-video iframe {
     width: 200%;
     height: 200%;
   }
+
   .section-title {
     font-size: 28px;
   }
+
   .cars-grid {
     grid-template-columns: 1fr;
     max-width: 400px;
     margin: 0 auto;
   }
+
   .car-image {
     height: 150px;
   }
+
   .car-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
   }
+
   .car-details {
     flex-wrap: wrap;
     gap: 8px;
   }
+
   .car-actions {
     flex-direction: column;
   }
+
   .btn-phone {
     min-width: auto;
   }
+
   .service-grid {
     grid-template-columns: 1fr;
   }
+
   .why-grid {
     grid-template-columns: 1fr 1fr;
   }
+
   .cta-section h2 {
     font-size: 28px;
   }
+
   .tour-detail-hero-content {
     padding: 100px 20px 40px;
   }
+
   .tour-detail-hero-content h1 {
     font-size: 28px;
   }
+
   .tour-meta {
     gap: 12px;
   }
+
   .tour-meta span {
     font-size: 13px;
     padding: 6px 14px;
   }
+
   .tour-highlights {
     grid-template-columns: 1fr;
   }
+
   .destination-image img {
     height: 200px;
   }
+
   .itinerary-timeline {
     padding-left: 20px;
   }
+
   .itinerary-item::before {
     left: -16px;
     width: 10px;
     height: 10px;
   }
+
   .itinerary-time {
     min-width: 55px;
     font-size: 13px;
   }
+
   /* Slider responsif */
   .slider-btn {
     width: 36px;
     height: 36px;
     font-size: 14px;
   }
+
   .slider-btn.prev-btn {
     left: -8px;
   }
+
   .slider-btn.next-btn {
     right: -8px;
   }
@@ -1730,26 +1762,33 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+
   .footer-col h4 {
     font-size: 13px;
   }
+
   .footer-col ul li a {
     font-size: 12px;
   }
+
   .logo-circle {
     width: 40px;
     height: 40px;
   }
+
   .logo-text {
     font-size: 18px;
   }
+
   .logo-text small {
     font-size: 9px;
     letter-spacing: 1px;
   }
+
   .logo-wrapper {
     gap: 10px;
   }
+
   .tour-slide {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -1760,51 +1799,65 @@ section {
   .hero {
     min-height: 450px;
   }
+
   .hero-content h1 {
     font-size: 24px;
   }
+
   .hero-content p {
     font-size: 13px;
     line-height: 1.6;
   }
+
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary {
     font-size: 13px;
     padding: 10px 20px;
   }
+
   .hero-badge {
     font-size: 11px;
     padding: 4px 16px;
     letter-spacing: 2px;
   }
+
   .tour-detail-hero-content {
     padding: 80px 16px 30px;
   }
+
   .tour-detail-hero-content h1 {
     font-size: 22px;
   }
+
   .tour-detail-hero-content .hero-desc {
     font-size: 14px;
   }
+
   .tour-meta {
     gap: 8px;
   }
+
   .tour-meta span {
     font-size: 12px;
     padding: 4px 12px;
   }
+
   .section-title {
     font-size: 24px;
   }
+
   .why-grid {
     grid-template-columns: 1fr;
   }
+
   .price-item {
     font-size: 13px;
   }
+
   .cta-section h2 {
     font-size: 26px;
   }
+
   .tour-price-box .price {
     font-size: 28px;
   }
@@ -1815,27 +1868,34 @@ section {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
   .maps-link {
     justify-content: center;
   }
+
   .contact-email {
     justify-content: center;
   }
+
   .social-links li a {
     justify-content: center;
   }
+
   .logo-circle {
     width: 34px;
     height: 34px;
     border-width: 1.5px;
   }
+
   .logo-text {
     font-size: 15px;
   }
+
   .logo-text small {
     font-size: 7px;
     letter-spacing: 1px;
   }
+
   .logo-wrapper {
     gap: 8px;
   }
@@ -1855,7 +1915,7 @@ section {
   align-items: center;
 }
 
-.nav-links > li > a {
+.nav-links>li>a {
   color: #e0e0e0;
   font-size: 14px;
   font-weight: 500;
@@ -1865,11 +1925,11 @@ section {
   position: relative;
 }
 
-.nav-links > li > a:hover {
+.nav-links>li>a:hover {
   color: #d4af37;
 }
 
-.nav-links > li > a::after {
+.nav-links>li>a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1880,7 +1940,7 @@ section {
   transition: width 0.3s;
 }
 
-.nav-links > li > a:hover::after {
+.nav-links>li>a:hover::after {
   width: 100%;
 }
 
@@ -1951,6 +2011,7 @@ section {
   .nav-menu {
     display: none;
   }
+
   .nav-menu.active {
     display: block;
     position: absolute;
@@ -1962,16 +2023,19 @@ section {
     padding: 20px 24px;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
   }
+
   .nav-links {
     flex-direction: column;
     gap: 12px;
     align-items: stretch;
   }
-  .nav-links > li > a {
+
+  .nav-links>li>a {
     display: block;
     padding: 10px 0;
     font-size: 15px;
   }
+
   .dropdown-menu {
     position: static;
     opacity: 1;
@@ -1981,24 +2045,51 @@ section {
     border-radius: 8px;
     padding: 4px 0;
     margin-top: 4px;
-    max-height: 0;
-    overflow: hidden;
-    transition:
-      max-height 0.3s ease,
-      padding 0.3s ease;
-    padding: 0 0;
-    box-shadow: none;
-    border: none;
   }
-  .dropdown.active .dropdown-menu {
-    max-height: 300px;
-    padding: 4px 0;
+}
+
+/* ==========================================
+   LANGUAGE SWITCHER STYLING
+   ========================================== */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  margin-right: 6px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: #888;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 2px 4px;
+  font-family: "Inter", sans-serif;
+}
+
+.lang-btn.active,
+.lang-btn:hover {
+  color: #d4af37;
+}
+
+.lang-divider {
+  color: #444;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .lang-switcher {
+    padding: 3px 8px;
   }
-  .dropdown-menu li a {
-    padding: 8px 20px;
-    font-size: 14px;
-  }
-  .dropdown.active .dropdown-toggle i {
-    transform: rotate(180deg);
+
+  .lang-btn {
+    font-size: 12px;
   }
 }
