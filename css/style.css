@@ -2045,8 +2045,31 @@ section {
     border-radius: 8px;
     padding: 4px 0;
     margin-top: 4px;
+    max-height: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.3s ease,
+      padding 0.3s ease;
+    padding: 0 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    max-height: 300px;
+    padding: 4px 0;
+  }
+
+  .dropdown-menu li a {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .dropdown.active .dropdown-toggle i {
+    transform: rotate(180deg);
   }
 }
+
 
 /* ==========================================
    LANGUAGE SWITCHER STYLING
