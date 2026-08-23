@@ -6,7 +6,8 @@ const cars = [
     id: 1,
     name: "Honda Brio",
     passenger: { id: "4 Penumpang", en: "4 Passengers" },
-    image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=300&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=300&fit=crop",
     prices: {
       manual: "Rp 275.000",
       matic: "Rp 300.000",
@@ -19,7 +20,8 @@ const cars = [
     id: 2,
     name: "Honda Brio Old",
     passenger: { id: "4 Penumpang", en: "4 Passengers" },
-    image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=300&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=300&fit=crop",
     prices: {
       manual: "Rp 275.000",
       matic: "Rp 300.000",
@@ -32,7 +34,8 @@ const cars = [
     id: 3,
     name: "Daihatsu Ayla",
     passenger: { id: "4 Penumpang", en: "4 Passengers" },
-    image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=400&h=300&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=400&h=300&fit=crop",
     prices: {
       manual: "Rp 250.000",
       matic: "Rp 275.000",
@@ -45,7 +48,8 @@ const cars = [
     id: 4,
     name: "Daihatsu Ayla Old",
     passenger: { id: "4 Penumpang", en: "4 Passengers" },
-    image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=400&h=300&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=400&h=300&fit=crop",
     prices: {
       manual: "Rp 200.000",
       matic: "Rp 250.000",
@@ -58,7 +62,8 @@ const cars = [
     id: 5,
     name: "Toyota Avanza",
     passenger: { id: "6 Penumpang", en: "6 Passengers" },
-    image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=400&h=300&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=400&h=300&fit=crop",
     prices: {
       manual: "Rp 300.000",
       matic: "Rp 350.000",
@@ -71,7 +76,8 @@ const cars = [
     id: 6,
     name: "Toyota Innova",
     passenger: { id: "7 Penumpang", en: "7 Passengers" },
-    image: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=400&h=300&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=400&h=300&fit=crop",
     prices: {
       manual: "Rp 400.000",
       matic: "Rp 450.000",
@@ -88,8 +94,10 @@ const tours = [
     id: 1,
     title: "BALI COMBINE TOUR 1",
     badge: { id: "Populer", en: "Popular" },
-    description: "Bali Combination Tour offers the perfect way to explore Bali by combining its top attractions, cultural landmarks, and natural beauty in one unforgettable journey.",
-    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400&h=300&fit=crop",
+    description:
+      "Bali Combination Tour offers the perfect way to explore Bali by combining its top attractions, cultural landmarks, and natural beauty in one unforgettable journey.",
+    image:
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400&h=300&fit=crop",
     price: "Rp 350.000",
     link: "tour-detail.html?id=1",
   },
@@ -97,8 +105,10 @@ const tours = [
     id: 2,
     title: "LOVINA DOLPHIN TOUR",
     badge: { id: "Best Seller", en: "Best Seller" },
-    description: "Lovina Dolphin Tour offers a memorable sunrise experience where you can watch wild dolphins in their natural habitat while enjoying Lovina Beach.",
-    image: "https://images.unsplash.com/photo-1588868109521-a4a3a1bcd7c6?w=400&h=300&fit=crop",
+    description:
+      "Lovina Dolphin Tour offers a memorable sunrise experience where you can watch wild dolphins in their natural habitat while enjoying Lovina Beach.",
+    image:
+      "https://images.unsplash.com/photo-1588868109521-a4a3a1bcd7c6?w=400&h=300&fit=crop",
     price: "Rp 400.000",
     link: "tour-detail.html?id=2",
   },
@@ -106,8 +116,10 @@ const tours = [
     id: 3,
     title: "UBUD TOUR #1",
     badge: { id: "Eksklusif", en: "Exclusive" },
-    description: "Part of the Puri Semarapura royal palace complex – a grand hall and a floating pavilion.",
-    image: "https://images.unsplash.com/photo-1580127428408-3ed6be5b1d7d?w=400&h=300&fit=crop",
+    description:
+      "Part of the Puri Semarapura royal palace complex – a grand hall and a floating pavilion.",
+    image:
+      "https://images.unsplash.com/photo-1580127428408-3ed6be5b1d7d?w=400&h=300&fit=crop",
     price: "Rp 450.000",
     link: "tour-detail.html?id=3",
   },
@@ -115,8 +127,10 @@ const tours = [
     id: 4,
     title: "UBUD TOUR #2",
     badge: { id: "Romantis", en: "Romantic" },
-    description: "Nikmati sunset romantis di Uluwatu dengan pertunjukan Kecak dan pemandangan tebing.",
-    image: "https://images.unsplash.com/photo-1580455732977-1e71f3a0d6a8?w=400&h=300&fit=crop",
+    description:
+      "Nikmati sunset romantis di Uluwatu dengan pertunjukan Kecak dan pemandangan tebing.",
+    image:
+      "https://images.unsplash.com/photo-1580455732977-1e71f3a0d6a8?w=400&h=300&fit=crop",
     price: "Rp 380.000",
     link: "tour-detail.html?id=4",
   },
@@ -124,8 +138,10 @@ const tours = [
     id: 5,
     title: "BEDUGUL TOUR",
     badge: { id: "Petualangan", en: "Adventure" },
-    description: "Jelajahi keindahan Danau Beratan, Pura Ulun Danu, serta pemandangan alam pegunungan Bedugul yang sejuk.",
-    image: "https://images.unsplash.com/photo-1588868109521-a4a3a1bcd7c6?w=400&h=300&fit=crop",
+    description:
+      "Jelajahi keindahan Danau Beratan, Pura Ulun Danu, serta pemandangan alam pegunungan Bedugul yang sejuk.",
+    image:
+      "https://images.unsplash.com/photo-1588868109521-a4a3a1bcd7c6?w=400&h=300&fit=crop",
     price: "Rp 500.000",
     link: "tour-detail.html?id=5",
   },
@@ -133,8 +149,10 @@ const tours = [
     id: 6,
     title: "NUSA PENIDA PACKAGE 1",
     badge: { id: "Populer", en: "Popular" },
-    description: "Nikmati keindahan tebing Kelingking Beach, Broken Beach, dan Angel's Billabong yang menakjubkan.",
-    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400&h=300&fit=crop",
+    description:
+      "Nikmati keindahan tebing Kelingking Beach, Broken Beach, dan Angel's Billabong yang menakjubkan.",
+    image:
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400&h=300&fit=crop",
     price: "Rp 420.000",
     link: "tour-detail.html?id=6",
   },
@@ -146,7 +164,7 @@ let currentLang = localStorage.getItem("preferredLang") || "id";
 
 // Helper Ambil Kamus Bahasa
 function getTranslation() {
-  return (typeof translations !== "undefined" && translations[currentLang])
+  return typeof translations !== "undefined" && translations[currentLang]
     ? translations[currentLang]
     : translations.id;
 }
@@ -229,7 +247,7 @@ function renderCars() {
                 </div>
             </div>
         </div>
-    `
+    `,
     )
     .join("");
 }
@@ -240,7 +258,8 @@ function renderTourSlider() {
   if (!container) return;
 
   const t = getTranslation();
-  const slideSize = window.innerWidth <= 768 ? 1 : window.innerWidth <= 992 ? 2 : 3;
+  const slideSize =
+    window.innerWidth <= 768 ? 1 : window.innerWidth <= 992 ? 2 : 3;
   const slides = [];
 
   for (let i = 0; i < tours.length; i += slideSize) {
@@ -257,8 +276,8 @@ function renderTourSlider() {
       (slideTours, index) => `
         <div class="tour-slide" data-index="${index}">
             ${slideTours
-          .map(
-            (tour) => `
+              .map(
+                (tour) => `
                 <div class="tour-card">
                     <div class="tour-image" style="background-image: url('${tour.image}');">
                         <span class="tour-badge">${tour.badge[currentLang] || tour.badge.id}</span>
@@ -272,11 +291,11 @@ function renderTourSlider() {
                         </div>
                     </div>
                 </div>
-            `
-          )
-          .join("")}
+            `,
+              )
+              .join("")}
         </div>
-    `
+    `,
     )
     .join("");
 
@@ -297,7 +316,8 @@ function updateDots() {
 
   dotsContainer.innerHTML = Array.from(
     { length: totalSlides },
-    (_, i) => `<button class="dot ${i === currentSlide ? "active" : ""}" data-index="${i}"></button>`
+    (_, i) =>
+      `<button class="dot ${i === currentSlide ? "active" : ""}" data-index="${i}"></button>`,
   ).join("");
 
   dotsContainer.querySelectorAll(".dot").forEach((dot) => {
@@ -319,10 +339,12 @@ function initTourSlider() {
   renderTourSlider();
 
   const prevBtn = document.getElementById("tourPrevBtn");
-  if (prevBtn) prevBtn.addEventListener("click", () => goToSlide(currentSlide - 1));
+  if (prevBtn)
+    prevBtn.addEventListener("click", () => goToSlide(currentSlide - 1));
 
   const nextBtn = document.getElementById("tourNextBtn");
-  if (nextBtn) nextBtn.addEventListener("click", () => goToSlide(currentSlide + 1));
+  if (nextBtn)
+    nextBtn.addEventListener("click", () => goToSlide(currentSlide + 1));
 
   let autoPlayInterval;
   const startAutoPlay = () => {
@@ -373,7 +395,8 @@ function renderTourDetail() {
   if (descEl) descEl.innerText = tour.description;
 
   const priceMetaEl = document.getElementById("tourPriceMeta");
-  if (priceMetaEl) priceMetaEl.innerHTML = `<i class="fas fa-tag"></i> ${t["tour_start_from"]} ${tour.price}`;
+  if (priceMetaEl)
+    priceMetaEl.innerHTML = `<i class="fas fa-tag"></i> ${t["tour_start_from"]} ${tour.price}`;
 
   const sidePriceEl = document.getElementById("tourSidebarPrice");
   if (sidePriceEl) sidePriceEl.innerText = tour.price;
@@ -385,7 +408,9 @@ function initFaq() {
     button.addEventListener("click", function () {
       const item = this.parentElement;
       const isActive = item.classList.contains("active");
-      document.querySelectorAll(".faq-item").forEach((el) => el.classList.remove("active"));
+      document
+        .querySelectorAll(".faq-item")
+        .forEach((el) => el.classList.remove("active"));
       if (!isActive) item.classList.add("active");
     });
   });
@@ -403,7 +428,8 @@ function initSmoothScroll() {
         e.preventDefault();
         const headerOffset = 80;
         const elementPosition = target.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
 
         window.scrollTo({
           top: offsetPosition,
@@ -422,7 +448,9 @@ function initMenuToggle() {
       const navMenu = document.getElementById("navMenu");
       navMenu.classList.toggle("active");
       const icon = this.querySelector("i");
-      icon.className = navMenu.classList.contains("active") ? "fas fa-times" : "fas fa-bars";
+      icon.className = navMenu.classList.contains("active")
+        ? "fas fa-times"
+        : "fas fa-bars";
     });
   }
 }
