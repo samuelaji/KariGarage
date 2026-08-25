@@ -189,10 +189,12 @@ a {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.55) 50%,
-      rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.55) 50%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
 }
 
 .hero-content {
@@ -952,10 +954,12 @@ section {
 .tour-detail-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.3) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
   z-index: 1;
 }
 
@@ -1915,7 +1919,7 @@ section {
   align-items: center;
 }
 
-.nav-links>li>a {
+.nav-links > li > a {
   color: #e0e0e0;
   font-size: 14px;
   font-weight: 500;
@@ -1925,11 +1929,11 @@ section {
   position: relative;
 }
 
-.nav-links>li>a:hover {
+.nav-links > li > a:hover {
   color: #d4af37;
 }
 
-.nav-links>li>a::after {
+.nav-links > li > a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1940,7 +1944,7 @@ section {
   transition: width 0.3s;
 }
 
-.nav-links>li>a:hover::after {
+.nav-links > li > a:hover::after {
   width: 100%;
 }
 
@@ -2030,7 +2034,7 @@ section {
     align-items: stretch;
   }
 
-  .nav-links>li>a {
+  .nav-links > li > a {
     display: block;
     padding: 10px 0;
     font-size: 15px;
