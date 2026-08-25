@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Detail - KARI GARAGE</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="logo">
+          <div class="logo-wrapper">
+            <div class="logo-circle">
+              <img src="image/logo.jpeg" alt="KARI GARAGE" class="logo-img" />
+            </div>
+            <div class="logo-text">
+              KARI <span>GARAGE</span>
+              <small>Best Tour And Travel Bali</small>
+            </div>
+          </div>
+        </div>
+        <div class="header-right">
+          <a href="#" class="btn-wa-header">
+            <i class="fab fa-whatsapp"></i> 0821-4632-0344
+          </a>
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- TOUR DETAIL HERO -->
+    <section class="tour-detail-hero">
+      <!-- ID tourDetailBg tambah di sini -->
+      <div
+        class="tour-detail-hero-bg"
+        id="tourDetailBg"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1580127428408-3ed6be5b1d7d?w=1200&h=600&fit=crop&quot;);
+        "
+      >
+        <div class="tour-detail-overlay"></div>
+        <div class="container tour-detail-hero-content">
+          <div class="breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="index.html#tour">Tour</a>
+            <span>/</span>
+            <span class="current" id="tourBreadcrumb">Memuat Tour...</span>
+          </div>
+          <!-- ID tourTitle tambah di sini -->
+          <h1 id="tourTitle">Memuat <span>Tour...</span></h1>
+
+          <!-- ID tourHeroDesc tambah di sini -->
+          <p class="hero-desc" id="tourHeroDesc">
+            Silakan tunggu, sedang memuat detail perjalanan Anda...
+          </p>
+          <div class="tour-meta">
+            <span><i class="fas fa-clock"></i> 10 Jam</span>
+            <span><i class="fas fa-user"></i> Minimal 2 Orang</span>
+            <!-- ID tourPriceMeta ditambahkan di sini -->
+            <span class="price-highlight" id="tourPriceMeta"
+              ><i class="fas fa-tag"></i> Mulai Rp -</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOUR OVERVIEW -->
+    <section class="tour-overview">
+      <div class="container">
+        <div class="tour-overview-grid">
+          <div class="tour-overview-text">
+            <h2>Tour <span>Overview</span></h2>
+            <p>
+              Paket wisata ini dirancang khusus untuk memberikan pengalaman
+              liburan terbaik di Bali. Menjelajahi keindahan alam, budaya, dan
+              tradisi lokal dengan kenyamanan maksimal.
+            </p>
+            <p>
+              Dengan pemandu profesional dan kendaraan premium, perjalanan Anda
+              akan terasa nyaman, aman, dan berkesan.
+            </p>
+            <div class="tour-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Free antar jemput hotel</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Private tour (tidak digabung)</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Driver profesional berlisensi</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Kendaraan premium ber-AC</span>
+              </div>
+            </div>
+          </div>
+          <div class="tour-overview-sidebar">
+            <div class="tour-price-box">
+              <h4>Harga Mulai</h4>
+              <!-- ID tourSidebarPrice ditambahkan di sini -->
+              <div class="price" id="tourSidebarPrice">Rp -</div>
+              <p class="price-note">/ orang (minimal 2 orang)</p>
+
+              <!-- ID tourSidebarWaBtn ditambahkan di sini -->
+              <a
+                href="#"
+                id="tourSidebarWaBtn"
+                target="_blank"
+                class="btn-primary btn-block"
+                ><i class="fab fa-whatsapp"></i> Booking Sekarang</a
+              >
+              <a href="tel:082146320344" class="btn-secondary btn-block"
+                >Hubungi Kami</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINASI -->
+    <section class="tour-destinations">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">✦ Destinasi</span>
+          <h2 class="section-title">
+            Tempat yang Akan <span>Dikunjungi</span>
+          </h2>
+          <p class="section-sub">
+            Setiap destinasi dipilih untuk memberikan pengalaman terbaik.
+          </p>
+        </div>
+
+        <!-- Di sini JavaScript nambah daftar tempat wisata -->
+        <div id="tourDestinations"></div>
+      </div>
+    </section>
+
+    <!-- ITINERARY -->
+    <section class="tour-itinerary">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">✦ Itinerary</span>
+          <h2 class="section-title">Rencana <span>Perjalanan</span></h2>
+          <p class="section-sub">
+            Jadwal perjalanan yang dirancang untuk pengalaman maksimal.
+          </p>
+        </div>
+
+        <!-- Di sinilah JavaScript nambah jadwal jam per jam -->
+        <div class="itinerary-timeline" id="tourItinerary"></div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="tour-booking">
+      <div class="container">
+        <div class="booking-wrapper">
+          <div class="booking-info">
+            <h2>Book <span>Now</span></h2>
+            <p>
+              Isi form di bawah atau klik nomor ini untuk respon cepat via
+              WhatsApp:
+            </p>
+            <!-- ID tourWaBtn ditambahkan di sini -->
+            <a href="#" id="tourWaBtn" target="_blank" class="booking-wa"
+              ><i class="fab fa-whatsapp"></i> +62 821-4632-0344</a
+            >
+            <div class="booking-note">
+              <p>
+                <i class="fas fa-info-circle"></i> Kami akan merespon dalam
+                waktu 15 menit
+              </p>
+            </div>
+          </div>
+          <!-- Form Booking -->
+          <div class="booking-form">
+            <form id="bookingForm">
+              <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input
+                  type="text"
+                  id="bookName"
+                  placeholder="Masukkan nama Anda"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Tanggal Tour</label>
+                <input type="date" id="bookDate" required />
+              </div>
+              <div class="form-group">
+                <label>Jumlah Peserta</label>
+                <input
+                  type="number"
+                  id="bookPax"
+                  placeholder="Jumlah orang"
+                  min="1"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn-primary btn-block">
+                <i class="fab fa-whatsapp"></i> Kirim Pesanan via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-new">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; 2026 <span>KARI GARAGE</span>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
