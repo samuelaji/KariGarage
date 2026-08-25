@@ -202,4 +202,102 @@ const translations = {
       "Destination data not available yet. Updating soon!",
     detail_no_itinerary: "Itinerary data not available yet. Updating soon!",
   },
+  zh: {
+    // --- 导航 ---
+    nav_home: "首页",
+    nav_tour: "旅游行程",
+    nav_rent_car: "租车服务",
+    nav_service: "服务项目",
+    nav_about: "关于我们",
+    nav_contact: "联系我们",
+
+    // --- 英雄区 (HERO) ---
+    hero_badge: "✦ 尊享服务",
+    hero_title: "租车与旅游<br /><span>在巴厘岛</span>",
+    hero_desc:
+      "体验尊贵豪华的行程，提供高端车队与专属服务。<br />支持自驾租车或配备专业司机服务。",
+    btn_book_now: "立即预订",
+    btn_view_fleet: "查看车队",
+
+    // --- 服务 ---
+    service_tag: "✦ 服务项目",
+    service_title: "高端选择",
+    service_sub: "两种灵活的方案，打造巴厘岛最佳旅行体验。",
+    self_drive_title: "自驾租车",
+    self_drive_desc:
+      "自由探索巴厘岛，享受无拘无束的自驾之旅。车辆保养良好，车型最新。",
+    self_drive_price: "起价 印尼盾 200.000",
+    with_driver_title: "配备司机",
+    with_driver_desc:
+      "由经验丰富、热情礼貌的专业司机带您顺畅出行。费用已包含燃油费。",
+    with_driver_price: "起价 印尼盾 380.000",
+
+    // --- 旅游行程 ---
+    tour_tag: "✦ 推荐行程",
+    tour_title: "精选旅游套餐",
+    tour_sub: "选择我们的专属旅游套餐，尽情探索巴厘岛的美丽风光。",
+    need_help: "需要帮助？",
+    chat_us: "在线咨询",
+    tour_start_from: "起价",
+    btn_see_details: "查看详情",
+
+    // --- 车队 ---
+    car_tag: "✦ 车队介绍",
+    car_title: "选择您的理想座驾",
+    car_sub: "精选高端车队，价格透明，品质保障。",
+    car_type: "汽车租赁",
+    car_duration: "24小时",
+    price_manual: "手动挡租车",
+    price_matic: "自动挡租车",
+    price_driver: "含司机 + 油费",
+    btn_book_wa: "通过 WhatsApp 预订",
+    btn_phone: "电话咨询",
+
+    // --- 优势 (ABOUT) ---
+    why_tag: "✦ 我们的优势",
+    why_title: "为什么选择我们？",
+    why_sub: "超过10年服务国内外游客的丰富经验。",
+    why_1_title: "高端车队",
+    why_1_desc: "最新车款，干净整洁，定期保养，车况绝佳。",
+    why_2_title: "价格透明",
+    why_2_desc: "无任何隐形费用，按标价结算。",
+    why_3_title: "专业司机",
+    why_3_desc: "经验丰富、态度亲切，熟知巴厘岛各大景点路线。",
+    why_4_title: "24小时服务",
+    why_4_desc: "全天候随时待命，包括机场接送服务。",
+
+    // --- 常见问题 (FAQ) ---
+    faq_tag: "✦ 常见问题",
+    faq_title: "常见问题解答",
+    faq_sub: "预订前需了解的重要信息。",
+    faq_q1: "什么是自驾租车？",
+    faq_a1:
+      "自驾租车意味着您自行驾驶车辆。车辆交付给您时不带司机，非常适合在巴厘岛有驾驶经验的游客。",
+    faq_q2: "费用是否包含燃油费？",
+    faq_a2:
+      "对于带司机的套餐，燃油费已包含在内。对于自驾套餐，燃油费由租车人自行承担。",
+    faq_q3: "如何进行预订？",
+    faq_a3:
+      "只需通过 WhatsApp 或电话联系我们。我们将协助您选择符合需求的车辆，并安排接送时间。",
+    faq_q4: "是否提供机场接送服务？",
+    faq_a4:
+      "是的，我们提供从伍拉·赖国际机场（I Gusti Ngurah Rai）或您在巴厘岛住宿酒店的免费接送服务。",
+
+    // --- CTA & 页脚 ---
+    cta_title: "以独一无二的风采畅游巴厘岛",
+    cta_sub: "立即联系我们，开启尊享旅行体验。",
+    cta_btn: "WhatsApp 联系",
+    footer_service: "服务项目",
+    footer_rent_car: "租车服务",
+    footer_office: "我们的办公室",
+    footer_partner: "合作伙伴",
+    footer_follow: "关注我们",
+    footer_contact: "联系我们",
+
+    // --- 旅游详情页 ---
+    detail_destinations: "旅游景点",
+    detail_itinerary: "行程安排",
+    detail_no_destinations: "景点数据暂未更新，敬请期待！",
+    detail_no_itinerary: "行程安排暂未更新，敬请期待！",
+  },
 };

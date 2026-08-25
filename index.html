@@ -1,474 +1,411 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KARI GARAGE - Tur dan Travel Terbaik di Bali</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KARI GARAGE - Tur dan Travel Terbaik di Bali</title>
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <body>
-    <!-- Navigasi Atas-->
-    <header class="header" id="header">
-      <div class="container">
-        <div class="logo">
-          <div class="logo-wrapper">
-            <div class="logo-circle">
-              <img src="image/logo.jpeg" alt="KARI GARAGE" class="logo-img" />
-            </div>
-            <div class="logo-text">
-              KARI <span>GARAGE</span>
-              <small>Best Tour And Travel Bali</small>
-            </div>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Navigasi Atas-->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="logo">
+        <div class="logo-wrapper">
+          <div class="logo-circle">
+            <img src="image/logo.jpeg" alt="KARI GARAGE" class="logo-img" />
           </div>
-        </div>
-
-        <!-- Navigasi Desktop -->
-        <nav class="nav-menu" id="navMenu">
-          <ul class="nav-links">
-            <li><a href="index.html" data-i18n="nav_home">Beranda</a></li>
-
-            <!-- Dropdown Tour -->
-            <li class="dropdown">
-              <a href="javascript:void(0)" class="dropdown-toggle">
-                <span data-i18n="nav_tour">Tour</span>
-                <i class="fas fa-chevron-down"></i>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="tour-detail.html?id=5">Bedugul Tour</a></li>
-                <li><a href="tour-detail.html?id=11">Kintamani Tour</a></li>
-                <li><a href="tour-detail.html?id=10">Uluwatu Tour</a></li>
-              </ul>
-            </li>
-
-            <!-- Dropdown Rent Car -->
-            <li class="dropdown">
-              <a href="javascript:void(0)" class="dropdown-toggle">
-                <span data-i18n="nav_rent_car">Sewa Mobil</span>
-                <i class="fas fa-chevron-down"></i>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="#mobil">Mini Cooper</a></li>
-                <li><a href="#mobil">Luxury MPV</a></li>
-                <li><a href="#mobil">Jeep & SUV</a></li>
-                <li><a href="#mobil">Sedan</a></li>
-                <li><a href="#mobil">Classic</a></li>
-                <li><a href="#mobil">Electric Car</a></li>
-                <li><a href="#mobil">Cabriolet</a></li>
-                <li><a href="#mobil">Sports Car</a></li>
-              </ul>
-            </li>
-
-            <li><a href="#service" data-i18n="nav_service">Layanan</a></li>
-            <li><a href="#about" data-i18n="nav_about">Tentang Kami</a></li>
-            <li><a href="#contact" data-i18n="nav_contact">Kontak</a></li>
-          </ul>
-        </nav>
-
-        <div class="header-right">
-          <!-- Tombol Switcher Bahasa (ID / EN) -->
-          <div class="lang-switcher">
-            <button
-              onclick="changeLanguage('id')"
-              id="btn-id"
-              class="lang-btn active"
-            >
-              ID
-            </button>
-            <span class="lang-divider">|</span>
-            <button onclick="changeLanguage('en')" id="btn-en" class="lang-btn">
-              EN
-            </button>
-          </div>
-
-          <a
-            href="https://wa.me/6282146320344"
-            class="btn-wa-header"
-            target="_blank"
-          >
-            <i class="fab fa-whatsapp"></i> 0821-4632-0344
-          </a>
-          <button class="menu-toggle" id="menuToggle">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <!-- Hero-->
-    <section class="hero">
-      <div class="hero-video">
-        <iframe
-          src="https://www.youtube.com/embed/BFS9n4B_2xA?autoplay=1&mute=1&loop=1&playlist=BFS9n4B_2xA&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1"
-          allow="autoplay; encrypted-media"
-          allowfullscreen
-        >
-        </iframe>
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <div class="hero-badge" data-i18n="hero_badge">✦ Premium Service</div>
-        <h1 data-i18n="hero_title">
-          Sewa Mobil &amp; Tour<br />
-          <span>Di Bali</span>
-        </h1>
-        <p data-i18n="hero_desc">
-          Pengalaman perjalanan mewah dengan armada premium dan layanan
-          eksklusif.<br />
-          Tersedia lepas kunci maupun dengan supir profesional.
-        </p>
-        <div class="hero-buttons">
-          <a
-            href="https://wa.me/6282146320344"
-            class="btn-primary"
-            target="_blank"
-          >
-            <i class="fab fa-whatsapp"></i>
-            <span data-i18n="btn_book_now">Pesan Sekarang</span>
-          </a>
-          <a href="#mobil" class="btn-secondary" data-i18n="btn_view_fleet"
-            >Lihat Armada</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Layanan -->
-    <section id="service">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="service_tag">✦ Layanan</span>
-          <h2 class="section-title">
-            <span data-i18n="service_title">Pilihan Premium</span>
-          </h2>
-          <p class="section-sub" data-i18n="service_sub">
-            Dua opsi fleksibel untuk pengalaman perjalanan terbaik di Bali.
-          </p>
-        </div>
-        <div class="service-grid">
-          <div class="service-card">
-            <div class="icon"><i class="fas fa-key"></i></div>
-            <h3 data-i18n="self_drive_title">Lepas Kunci</h3>
-            <p data-i18n="self_drive_desc">
-              Self-drive dengan kebebasan penuh menjelajah Bali. Mobil terbaru
-              dan terawat.
-            </p>
-            <span class="service-tag" data-i18n="self_drive_price"
-              >Mulai Rp 200.000</span
-            >
-          </div>
-          <div class="service-card">
-            <div class="icon"><i class="fas fa-user-tie"></i></div>
-            <h3 data-i18n="with_driver_title">Dengan Supir</h3>
-            <p data-i18n="with_driver_desc">
-              Perjalanan santai dengan driver profesional, ramah, dan
-              berpengalaman. Termasuk BBM.
-            </p>
-            <span class="service-tag" data-i18n="with_driver_price"
-              >Mulai Rp 380.000</span
-            >
+          <div class="logo-text">
+            KARI <span>GARAGE</span>
+            <small>Best Tour And Travel Bali</small>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- List Destinasi  -->
-    <section class="tour-ideas" id="tour">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="tour_tag">✦ Tour Ideas</span>
-          <h2 class="section-title">
-            <span data-i18n="tour_title">Paket Wisata Pilihan</span>
-          </h2>
-          <p class="section-sub" data-i18n="tour_sub">
-            Jelajahi keindahan Bali dengan paket wisata eksklusif kami.
-          </p>
-        </div>
+      <!-- Navigasi Desktop -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="index.html" data-i18n="nav_home">Beranda</a></li>
 
-        <!-- Pembungkus -->
-        <div class="tour-slider-wrapper">
-          <div class="tour-slider-container" id="tourSliderContainer">
-            <!-- dari javascript -->
-          </div>
-
-          <!-- Tombol Navigasi -->
-          <button class="slider-btn prev-btn" id="tourPrevBtn">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button class="slider-btn next-btn" id="tourNextBtn">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-        </div>
-
-        <!-- Indikator Dots -->
-        <div class="slider-dots" id="tourDots"></div>
-
-        <div class="tour-help">
-          <p>
-            <i class="fas fa-headset"></i>
-            <span data-i18n="need_help">Need Help?</span>
-            <a
-              href="https://wa.me/6282146320344"
-              target="_blank"
-              data-i18n="chat_us"
-              >Chat with us</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Daftar Mobil -->
-    <section id="mobil" class="cars-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="car_tag">✦ Armada</span>
-          <h2 class="section-title">
-            <span data-i18n="car_title">Pilih Mobil Impian Anda</span>
-          </h2>
-          <p class="section-sub" data-i18n="car_sub">
-            Koleksi kendaraan premium dengan harga transparan dan kualitas
-            terbaik.
-          </p>
-        </div>
-        <div class="cars-grid" id="carsGrid">
-          <!-- Kartu mobil digenerate oleh JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Keunggulan -->
-    <section id="about" class="advantages-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="why_tag">✦ Keunggulan</span>
-          <h2 class="section-title">
-            <span data-i18n="why_title">Mengapa Kami?</span>
-          </h2>
-          <p class="section-sub" data-i18n="why_sub">
-            Lebih dari 10 tahun melayani wisatawan domestik &amp; mancanegara.
-          </p>
-        </div>
-        <div class="why-grid">
-          <div class="why-card">
-            <div class="icon"><i class="fas fa-car"></i></div>
-            <h3 data-i18n="why_1_title">Armada Premium</h3>
-            <p data-i18n="why_1_desc">
-              Unit mobil terbaru, bersih, terawat, dan dalam kondisi prima.
-            </p>
-          </div>
-          <div class="why-card">
-            <div class="icon"><i class="fas fa-hand-holding-usd"></i></div>
-            <h3 data-i18n="why_2_title">Harga Transparan</h3>
-            <p data-i18n="why_2_desc">
-              Tanpa biaya tersembunyi. Harga sesuai yang tertera.
-            </p>
-          </div>
-          <div class="why-card">
-            <div class="icon"><i class="fas fa-user-check"></i></div>
-            <h3 data-i18n="why_3_title">Driver Profesional</h3>
-            <p data-i18n="why_3_desc">
-              Berpengalaman, ramah, dan menguasai rute wisata Bali.
-            </p>
-          </div>
-          <div class="why-card">
-            <div class="icon"><i class="fas fa-clock"></i></div>
-            <h3 data-i18n="why_4_title">Layanan 24 Jam</h3>
-            <p data-i18n="why_4_desc">
-              Siap melayani kapan saja, termasuk antar jemput bandara.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="faq_tag">✦ FAQ</span>
-          <h2 class="section-title">
-            <span data-i18n="faq_title">Pertanyaan Umum</span>
-          </h2>
-          <p class="section-sub" data-i18n="faq_sub">
-            Informasi penting sebelum Anda memesan.
-          </p>
-        </div>
-
-        <div class="faq-list">
-          <div class="faq-item active">
-            <button class="faq-question">
-              <span data-i18n="faq_q1">Apa itu sewa mobil lepas kunci?</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer" data-i18n="faq_a1">
-              Lepas kunci berarti Anda menyetir sendiri (self-drive). Mobil
-              diserahkan kepada Anda tanpa supir, cocok bagi yang sudah
-              berpengalaman berkendara di Bali.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">
-              <span data-i18n="faq_q2">Apakah termasuk bahan bakar?</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer" data-i18n="faq_a2">
-              Untuk paket dengan supir, bahan bakar (BBM) sudah termasuk. Untuk
-              paket lepas kunci, BBM menjadi tanggungan penyewa.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">
-              <span data-i18n="faq_q3">Bagaimana cara booking?</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer" data-i18n="faq_a3">
-              Cukup hubungi kami via WhatsApp atau telepon. Kami akan membantu
-              memilih mobil sesuai kebutuhan dan mengatur jadwal pengambilan /
-              pengantaran.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">
-              <span data-i18n="faq_q4">Apakah ada antar jemput?</span>
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <div class="faq-answer" data-i18n="faq_a4">
-              Ya, kami menyediakan antar jemput gratis dari Bandara I Gusti
-              Ngurah Rai atau hotel Anda di area Bali.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section id="contact" class="cta-section">
-      <div class="container">
-        <h2 data-i18n="cta_title">Jelajahi Bali Dengan Gaya Tak Tertandingi</h2>
-        <p data-i18n="cta_sub">
-          Hubungi kami sekarang dan rasakan pengalaman perjalanan premium.
-        </p>
-        <a href="https://wa.me/6282146320344" class="cta-btn" target="_blank">
-          <i class="fab fa-whatsapp"></i>
-          <span data-i18n="cta_btn">Hubungi WhatsApp</span>
-        </a>
-        <p class="cta-contact">
-          <i class="fas fa-phone"></i> 0821-4632-0344 &nbsp;|&nbsp;
-          <i class="fas fa-envelope"></i> info@karigarage.com
-        </p>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer-new">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-col">
-            <h4 data-i18n="footer_service">Service</h4>
-            <ul>
-              <li><a href="#">VIP Airport Service</a></li>
-              <li><a href="#">Heli Tour</a></li>
-              <li><a href="#">Heli Transfer</a></li>
-              <li><a href="#">Wedding Car</a></li>
-              <li><a href="#">Bali Premium Villa</a></li>
-              <li><a href="#">Police Escort</a></li>
-              <li><a href="#">Visa on Arrival</a></li>
-              <li><a href="#">Private Security</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4 data-i18n="footer_rent_car">Rent Car</h4>
-            <ul>
-              <li><a href="#">Mini Cooper</a></li>
-              <li><a href="#">Luxury MPV</a></li>
-              <li><a href="#">Jeep &amp; SUV</a></li>
-              <li><a href="#">Sedan</a></li>
-              <li><a href="#">Classic</a></li>
-              <li><a href="#">Electric Car</a></li>
-              <li><a href="#">Cabriolet</a></li>
-              <li><a href="#">Sports Car</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4 data-i18n="footer_office">Our Office</h4>
-            <a href="#" class="maps-link">
-              <i class="fas fa-map-pin"></i> Open in Maps
+          <!-- Dropdown Tour -->
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle">
+              <span data-i18n="nav_tour">Tour</span> <i class="fas fa-chevron-down"></i>
             </a>
-            <p class="office-address">
-              KARI GARAGE<br />
-              Jl. Raya Kuta No. 88<br />
-              Kuta, Badung, Bali
-            </p>
-            <div class="maps-credit">
-              <span>Google</span>
-              <span>Map data &copy;2026</span>
-              <span>|</span>
-              <a href="#">Terms</a>
-              <span>|</span>
-              <a href="#">Report error</a>
-            </div>
-          </div>
-
-          <div class="footer-col">
-            <h4 data-i18n="footer_partner">Our Partner</h4>
-            <ul>
-              <li><a href="#">Nusa Penida Tour</a></li>
-              <li><a href="#">Ubud Tour</a></li>
-              <li><a href="#">Uluwatu Tour</a></li>
-              <li><a href="#">Kintamani Tour</a></li>
-              <li><a href="#">Golf Packages</a></li>
-              <li><a href="#">Skydiving Bali</a></li>
+            <ul class="dropdown-menu">
+              <li><a href="tour-detail.html?id=5">Bedugul Tour</a></li>
+              <li><a href="tour-detail.html?id=11">Kintamani Tour</a></li>
+              <li><a href="tour-detail.html?id=10">Uluwatu Tour</a></li>
             </ul>
-          </div>
+          </li>
 
-          <div class="footer-col">
-            <h4 data-i18n="footer_follow">Follow Us</h4>
-            <ul class="social-links">
-              <li>
-                <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
-              </li>
+          <!-- Dropdown Rent Car -->
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle">
+              <span data-i18n="nav_rent_car">Sewa Mobil</span> <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#mobil">Mini Cooper</a></li>
+              <li><a href="#mobil">Luxury MPV</a></li>
+              <li><a href="#mobil">Jeep & SUV</a></li>
+              <li><a href="#mobil">Sedan</a></li>
+              <li><a href="#mobil">Classic</a></li>
+              <li><a href="#mobil">Electric Car</a></li>
+              <li><a href="#mobil">Cabriolet</a></li>
+              <li><a href="#mobil">Sports Car</a></li>
             </ul>
-          </div>
+          </li>
 
-          <div class="footer-col">
-            <h4 data-i18n="footer_contact">Contact Us</h4>
-            <p class="contact-email">
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:info@karigarage.com">info@karigarage.com</a>
-            </p>
-          </div>
+          <li><a href="#service" data-i18n="nav_service">Layanan</a></li>
+          <li><a href="#about" data-i18n="nav_about">Tentang Kami</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <!-- Tombol Switcher Bahasa (ID / EN / ZH) -->
+        <div class="lang-switcher">
+          <button onclick="changeLanguage('id')" id="btn-id" class="lang-btn active">ID</button>
+          <span class="lang-divider">|</span>
+          <button onclick="changeLanguage('en')" id="btn-en" class="lang-btn">EN</button>
+          <span class="lang-divider">|</span>
+          <button onclick="changeLanguage('zh')" id="btn-zh" class="lang-btn">ZH</button>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 <span>KARI GARAGE</span>. All rights reserved.</p>
+
+        <a href="https://wa.me/6282146320344" class="btn-wa-header" target="_blank">
+          <i class="fab fa-whatsapp"></i> 0821-4632-0344
+        </a>
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero-->
+  <section class="hero">
+    <div class="hero-video">
+      <iframe
+        src="https://www.youtube.com/embed/BFS9n4B_2xA?autoplay=1&mute=1&loop=1&playlist=BFS9n4B_2xA&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge" data-i18n="hero_badge">✦ Premium Service</div>
+      <h1 data-i18n="hero_title">
+        Sewa Mobil &amp; Tour<br />
+        <span>Di Bali</span>
+      </h1>
+      <p data-i18n="hero_desc">
+        Pengalaman perjalanan mewah dengan armada premium dan layanan eksklusif.<br />
+        Tersedia lepas kunci maupun dengan supir profesional.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/6282146320344" class="btn-primary" target="_blank">
+          <i class="fab fa-whatsapp"></i> <span data-i18n="btn_book_now">Pesan Sekarang</span>
+        </a>
+        <a href="#mobil" class="btn-secondary" data-i18n="btn_view_fleet">Lihat Armada</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Layanan -->
+  <section id="service">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="service_tag">✦ Layanan</span>
+        <h2 class="section-title"><span data-i18n="service_title">Pilihan Premium</span></h2>
+        <p class="section-sub" data-i18n="service_sub">
+          Dua opsi fleksibel untuk pengalaman perjalanan terbaik di Bali.
+        </p>
+      </div>
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="icon"><i class="fas fa-key"></i></div>
+          <h3 data-i18n="self_drive_title">Lepas Kunci</h3>
+          <p data-i18n="self_drive_desc">
+            Self-drive dengan kebebasan penuh menjelajah Bali. Mobil terbaru dan terawat.
+          </p>
+          <span class="service-tag" data-i18n="self_drive_price">Mulai Rp 200.000</span>
+        </div>
+        <div class="service-card">
+          <div class="icon"><i class="fas fa-user-tie"></i></div>
+          <h3 data-i18n="with_driver_title">Dengan Supir</h3>
+          <p data-i18n="with_driver_desc">
+            Perjalanan santai dengan driver profesional, ramah, dan berpengalaman. Termasuk BBM.
+          </p>
+          <span class="service-tag" data-i18n="with_driver_price">Mulai Rp 380.000</span>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- JavaScript (Sertakan kamus terlebih dahulu sebelum script utama) -->
-    <script src="js/translations.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <!-- List Destinasi  -->
+  <section class="tour-ideas" id="tour">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="tour_tag">✦ Tour Ideas</span>
+        <h2 class="section-title"><span data-i18n="tour_title">Paket Wisata Pilihan</span></h2>
+        <p class="section-sub" data-i18n="tour_sub">
+          Jelajahi keindahan Bali dengan paket wisata eksklusif kami.
+        </p>
+      </div>
+
+      <!-- Pembungkus -->
+      <div class="tour-slider-wrapper">
+        <div class="tour-slider-container" id="tourSliderContainer">
+          <!-- dari javascript -->
+        </div>
+
+        <!-- Tombol Navigasi -->
+        <button class="slider-btn prev-btn" id="tourPrevBtn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn next-btn" id="tourNextBtn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- Indikator Dots -->
+      <div class="slider-dots" id="tourDots"></div>
+
+      <div class="tour-help">
+        <p>
+          <i class="fas fa-headset"></i> <span data-i18n="need_help">Need Help?</span>
+          <a href="https://wa.me/6282146320344" target="_blank" data-i18n="chat_us">Chat with us</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Daftar Mobil -->
+  <section id="mobil" class="cars-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="car_tag">✦ Armada</span>
+        <h2 class="section-title"><span data-i18n="car_title">Pilih Mobil Impian Anda</span></h2>
+        <p class="section-sub" data-i18n="car_sub">
+          Koleksi kendaraan premium dengan harga transparan dan kualitas terbaik.
+        </p>
+      </div>
+      <div class="cars-grid" id="carsGrid">
+        <!-- Kartu mobil digenerate oleh JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Keunggulan -->
+  <section id="about" class="advantages-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="why_tag">✦ Keunggulan</span>
+        <h2 class="section-title"><span data-i18n="why_title">Mengapa Kami?</span></h2>
+        <p class="section-sub" data-i18n="why_sub">
+          Lebih dari 10 tahun melayani wisatawan domestik &amp; mancanegara.
+        </p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="icon"><i class="fas fa-car"></i></div>
+          <h3 data-i18n="why_1_title">Armada Premium</h3>
+          <p data-i18n="why_1_desc">Unit mobil terbaru, bersih, terawat, dan dalam kondisi prima.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon"><i class="fas fa-hand-holding-usd"></i></div>
+          <h3 data-i18n="why_2_title">Harga Transparan</h3>
+          <p data-i18n="why_2_desc">Tanpa biaya tersembunyi. Harga sesuai yang tertera.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon"><i class="fas fa-user-check"></i></div>
+          <h3 data-i18n="why_3_title">Driver Profesional</h3>
+          <p data-i18n="why_3_desc">Berpengalaman, ramah, dan menguasai rute wisata Bali.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon"><i class="fas fa-clock"></i></div>
+          <h3 data-i18n="why_4_title">Layanan 24 Jam</h3>
+          <p data-i18n="why_4_desc">Siap melayani kapan saja, termasuk antar jemput bandara.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="faq_tag">✦ FAQ</span>
+        <h2 class="section-title"><span data-i18n="faq_title">Pertanyaan Umum</span></h2>
+        <p class="section-sub" data-i18n="faq_sub">Informasi penting sebelum Anda memesan.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span data-i18n="faq_q1">Apa itu sewa mobil lepas kunci?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a1">
+            Lepas kunci berarti Anda menyetir sendiri (self-drive). Mobil diserahkan kepada Anda tanpa supir, cocok bagi
+            yang sudah berpengalaman berkendara di Bali.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q2">Apakah termasuk bahan bakar?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a2">
+            Untuk paket dengan supir, bahan bakar (BBM) sudah termasuk. Untuk paket lepas kunci, BBM menjadi tanggungan
+            penyewa.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q3">Bagaimana cara booking?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a3">
+            Cukup hubungi kami via WhatsApp atau telepon. Kami akan membantu memilih mobil sesuai kebutuhan dan mengatur
+            jadwal pengambilan / pengantaran.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq_q4">Apakah ada antar jemput?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer" data-i18n="faq_a4">
+            Ya, kami menyediakan antar jemput gratis dari Bandara I Gusti Ngurah Rai atau hotel Anda di area Bali.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="cta-section">
+    <div class="container">
+      <h2 data-i18n="cta_title">Jelajahi Bali Dengan Gaya Tak Tertandingi</h2>
+      <p data-i18n="cta_sub">Hubungi kami sekarang dan rasakan pengalaman perjalanan premium.</p>
+      <a href="https://wa.me/6282146320344" class="cta-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> <span data-i18n="cta_btn">Hubungi WhatsApp</span>
+      </a>
+      <p class="cta-contact">
+        <i class="fas fa-phone"></i> 0821-4632-0344 &nbsp;|&nbsp;
+        <i class="fas fa-envelope"></i> info@karigarage.com
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-new">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 data-i18n="footer_service">Service</h4>
+          <ul>
+            <li><a href="#">VIP Airport Service</a></li>
+            <li><a href="#">Heli Tour</a></li>
+            <li><a href="#">Heli Transfer</a></li>
+            <li><a href="#">Wedding Car</a></li>
+            <li><a href="#">Bali Premium Villa</a></li>
+            <li><a href="#">Police Escort</a></li>
+            <li><a href="#">Visa on Arrival</a></li>
+            <li><a href="#">Private Security</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_rent_car">Rent Car</h4>
+          <ul>
+            <li><a href="#">Mini Cooper</a></li>
+            <li><a href="#">Luxury MPV</a></li>
+            <li><a href="#">Jeep &amp; SUV</a></li>
+            <li><a href="#">Sedan</a></li>
+            <li><a href="#">Classic</a></li>
+            <li><a href="#">Electric Car</a></li>
+            <li><a href="#">Cabriolet</a></li>
+            <li><a href="#">Sports Car</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_office">Our Office</h4>
+          <a href="#" class="maps-link">
+            <i class="fas fa-map-pin"></i> Open in Maps
+          </a>
+          <p class="office-address">
+            KARI GARAGE<br />
+            Jl. Raya Kuta No. 88<br />
+            Kuta, Badung, Bali
+          </p>
+          <div class="maps-credit">
+            <span>Google</span>
+            <span>Map data &copy;2026</span>
+            <span>|</span>
+            <a href="#">Terms</a>
+            <span>|</span>
+            <a href="#">Report error</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_partner">Our Partner</h4>
+          <ul>
+            <li><a href="#">Nusa Penida Tour</a></li>
+            <li><a href="#">Ubud Tour</a></li>
+            <li><a href="#">Uluwatu Tour</a></li>
+            <li><a href="#">Kintamani Tour</a></li>
+            <li><a href="#">Golf Packages</a></li>
+            <li><a href="#">Skydiving Bali</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_follow">Follow Us</h4>
+          <ul class="social-links">
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact">Contact Us</h4>
+          <p class="contact-email">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@karigarage.com">info@karigarage.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 <span>KARI GARAGE</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/translations.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
