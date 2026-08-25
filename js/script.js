@@ -6,8 +6,7 @@ const cars = [
     id: 1,
     name: "Honda Brio",
     passenger: { id: "4 Penumpang", en: "4 Passengers" },
-    image:
-      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=300&fit=crop",
+    image: "/image/1.jpeg",
     prices: {
       manual: "Rp 275.000",
       matic: "Rp 300.000",
@@ -174,13 +173,9 @@ function changeLanguage(lang) {
   currentLang = lang;
   localStorage.setItem("preferredLang", lang);
 
-  // Update Tampilan Tombol Active
-  const btnId = document.getElementById("btn-id");
-  const btnEn = document.getElementById("btn-en");
-  if (btnId && btnEn) {
-    btnId.classList.toggle("active", lang === "id");
-    btnEn.classList.toggle("active", lang === "en");
-  }
+  // Sinkronkan dropdown dengan bahasa yang sedang aktif.
+  const languageSelect = document.getElementById("languageSelect");
+  if (languageSelect) languageSelect.value = lang;
 
   // Update Teks Statis pada HTML
   const t = getTranslation();
