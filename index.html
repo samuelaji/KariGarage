@@ -43,17 +43,7 @@
             <li><a href="index.html" data-i18n="nav_home">Beranda</a></li>
 
             <!-- Dropdown Tour -->
-            <li class="dropdown">
-              <a href="javascript:void(0)" class="dropdown-toggle">
-                <span data-i18n="nav_tour">Tour</span>
-                <i class="fas fa-chevron-down"></i>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="tour-detail.html?id=5">Bedugul Tour</a></li>
-                <li><a href="tour-detail.html?id=11">Kintamani Tour</a></li>
-                <li><a href="tour-detail.html?id=10">Uluwatu Tour</a></li>
-              </ul>
-            </li>
+            <li><a href="#tour" data-i18n="nav_tour">Tour</a></li>
 
             <!-- Dropdown Rent Car -->
             <li class="dropdown">
@@ -82,17 +72,15 @@
         <div class="header-right">
           <!-- Tombol Switcher Bahasa (ID / EN) -->
           <div class="lang-switcher">
-            <button
-              onclick="changeLanguage('id')"
-              id="btn-id"
-              class="lang-btn active"
+            <label for="languageSelect" class="sr-only">Pilih bahasa</label>
+            <select
+              id="languageSelect"
+              class="lang-select"
+              onchange="changeLanguage(this.value)"
             >
-              ID
-            </button>
-            <span class="lang-divider">|</span>
-            <button onclick="changeLanguage('en')" id="btn-en" class="lang-btn">
-              EN
-            </button>
+              <option value="id">ID</option>
+              <option value="en">EN</option>
+            </select>
           </div>
 
           <a
